@@ -5,7 +5,7 @@ require("dotenv").config()
 const {userRouter}=require("./routes/userroute")
 const {iprouter}=require("./routes/iproutes")
 const {auth}=require("./middleware/auth")
-
+const logger= require("./middleware/logger")
 
 const app = express()
 app.use(express.json())
